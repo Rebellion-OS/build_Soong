@@ -28,7 +28,7 @@ import (
 	"github.com/google/blueprint/bootstrap"
 	"github.com/google/blueprint/proptools"
 
-	"aosp/soong/android"
+	"lotus/soong/android"
 )
 
 var Bool = proptools.Bool
@@ -471,7 +471,7 @@ func (c *config) ResourceOverlays() []string {
 }
 
 func (c *config) JavaSourceOverlays() string {
-	return String(c.productVariables.Aosp.Java_Source_Overlays)
+	return String(c.productVariables.Lotus.Java_Source_Overlays)
 }
 
 func (c *config) JavaSourceOverlayModuleWhitelist() []string {
@@ -787,7 +787,7 @@ func (c *deviceConfig) DeviceKernelHeaderDirs() []string {
 }
 
 func (c *deviceConfig) SpecificCameraParametersLibrary() string {
-	return String(c.config.productVariables.Aosp.Specific_camera_parameter_library)
+	return String(c.config.productVariables.Lotus.Specific_camera_parameter_library)
 }
 
 func (c *deviceConfig) NativeCoverageEnabled() bool {
