@@ -28,7 +28,7 @@ import (
 	"github.com/google/blueprint/bootstrap"
 	"github.com/google/blueprint/proptools"
 
-	"Rebellion/soong/android"
+	"rebellion/soong/android"
 )
 
 var Bool = proptools.Bool

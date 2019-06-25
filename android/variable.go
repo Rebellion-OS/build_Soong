@@ -20,7 +20,7 @@ import (
 	"runtime"
 	"strings"
 
-	"Rebellion/soong/android"
+	"rebellion/soong/android"
 
 	"github.com/google/blueprint/proptools"
 )
